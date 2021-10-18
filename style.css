@@ -1,3 +1,95 @@
-* {
+:root {
+    --primary_color : rgba(34, 250, 237, 1);
+    --secundary-color : rgba(224, 224, 224, 1);
+    --background-color: rgba(22, 14, 51, 1);
+    --title-size: 6.4rem;
+    --subtitle-size : 2.4rem;
+    --text-size : 1.8rem;
+}
+
+/*1rem por defecto = 16px
+1rem = 10px
+*/
+html {
+    font-size: 62.5%;
+    font-family: 'Rubik', sans-serif;
+}
+
+*{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 550px;
+    text-align: center;
+    background-color: var(--background-color);
+
+}
+
+.welcome_page img{
+    width: 20rem;
+    height: 8rem;
+    align-self: center;
+    margin-top: 20rem;
+}
+
+section {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    height: 218px;
+    margin-top: 4rem;
+    align-self: center;
+    text-align: center;
+
+}
+
+.h1_main {
+    font-size: var(--title-size);
+    line-height: 1rem;
+    color: white;
+    margin-top: 35px;
+    margin-bottom: 50px;
+}
+
+.h3_main {
+    font-size: var(--subtitle-size);
+    line-height: 1rem;
+    color: var(--secundary-color);
+}
+
+.counter_welcome img{
+    width: 25rem;
+    height: 10rem;
+    align-self: center;
+    margin: 0;
+}
+
+.buttons_welcome button{
+    font-size: 1.6rem;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+    border-radius: 40px;
+}
+
+.button_buy_token {
+    background-color: var(--primary_color);
+    border: 3px solid var(--primary_color);
+}
+
+.button_white_paper{
+    background-color: transparent;
+    border: 3px solid var(--primary_color);
+    margin-left: 40px;
+
 }
